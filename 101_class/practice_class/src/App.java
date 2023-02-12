@@ -1,6 +1,27 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
+
+        Car myCar = new Car("Hyondai", 2023, "Black");
+
+    }
+
+    class Car{
+        // field
+        private String modelName;
+        private int modelYear;
+        private String color;
+    
+        // method
+        public String getModel(){
+            return this.modelName + ", " + this.modelYear + ", " + this.color;
+        }
+    
+        Car(String modelName, int modelYear, String color){
+            this.modelName = modelName;
+            this.modelYear = modelYear;
+            this.color = color;
+        }
     }
 }
 
